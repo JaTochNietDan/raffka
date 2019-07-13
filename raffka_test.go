@@ -42,3 +42,12 @@ func TestDefaultDictionary(t *testing.T) {
 		i++
 	}
 }
+
+func TestGetRandomWord(t *testing.T) {
+	r, err := Load(time.Now().UnixNano(), "./dictionaries/default")
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	t.Logf("Get word: %v", r.Next())
+}
