@@ -39,8 +39,6 @@ func TestDefaultDictionary(t *testing.T) {
 		}
 
 		list[word] = &struct{}{}
-
-		//t.Logf("Value: %s\n", word)
 		i++
 	}
 }
